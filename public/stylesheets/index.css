@@ -1,0 +1,122 @@
+/* Todos los elementos HTML usarán la fuente "Open Sans", sans-serif */
+
+* {
+    font-family: "Open Sans", sans-serif;
+}
+
+/* El elemento body sin margen y sin relleno */
+
+body {
+  
+}
+
+/* El elemento header tendrá una imagen de fondo */
+body{
+    display: flex
+    flex-direction:column;
+}
+header {
+    background-image: url('../images/background.png');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center center; 
+}
+
+header span{
+    font-style:oblique;
+}
+
+ h1{
+    grid-area: area1;
+    padding-top: 10%;
+    padding-left: 30px;
+    -webkit-text-stroke: 0.25px white;
+}
+ p{
+    text-align: justify;
+    align-items: center;
+    grid-area: area2;
+    padding-left: 30px;
+    padding-right:20px;
+}
+#imagenhead1{
+    grid-area: area3;
+}
+#imagenhead2{
+    grid-area: area4;
+}
+#imagenhead3{
+    grid-area: area5;
+}
+#imagenhead4{
+    grid-area: area6;
+}
+.imgheader{
+    width: 140px;
+    height: 160px;
+    margin-right: 10px;
+    margin-bottom: 5px;
+    box-shadow: 2px 2px 4px #000000;
+}
+
+header{
+    display: grid;
+    grid-template-areas: "area1  area1 area1 area1 area1"
+                         "area2  area3 area4 area5 area6"
+}
+
+
+nav ul{
+    margin: 0;
+    padding: 10px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    list-style-type: none;
+    background-color: brown;
+}
+nav ul li a{
+    color: azure;
+}
+
+main{
+    display: flex;
+    flex-direction: row;
+}
+
+#WebDevelopment {
+margin:0;
+display: grid;
+grid-template-areas:"h2webdev h2webdev h2webdev h2webdev h2webdev"
+                    "bookweb1 bookweb2 bookweb3 bookweb4 bookweb5"; 
+
+}
+#WebDevelopment h2{
+    grid-area: h2webdev;
+    margin-left: 60px;
+}
+
+#libroweb1{
+    grid-area: bookweb1;
+}
+#libroweb2{
+    grid-area: bookweb2;
+}
+#libroweb3{
+    grid-area: bookweb3;
+}
+#libroweb4{
+    grid-area: bookweb4;
+}
+#libroweb5{
+    grid-area: bookweb5;
+}
+.imgwebdev{
+    width: 150px;
+    height: 180px;
+    margin-left: 60px;
+    margin-bottom: 10px;
+    box-shadow: 2px 2px 4px #000000;
+}
+
+
